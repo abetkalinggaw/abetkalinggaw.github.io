@@ -514,7 +514,7 @@ iframe {
    * REUSED STYLE
    */
     .container {
-        max-width: 135px;
+        max-width: 540px;
         width: 100%;
         margin-inline: auto;
     }
@@ -529,8 +529,8 @@ iframe {
     .title-page .h1 {
         font-size: 28pt;
     }
-    .content-wrapper {
-        --padding: 30px;
+    .project-card {
+        --padding: 68px;
     }
     iframe {
         width: 340px;
@@ -549,15 +549,15 @@ iframe {
    * REUSED STYLE
    */
     .container {
-        max-width: 430px;
+        max-width: 540px;
         width: 100%;
         margin-inline: auto;
     }
     /**
    * PROJECT
    */
-    .content-wrapper {
-        --padding: 60px;
+    .project-card {
+        --padding: 68px;
     }
     iframe {
         width: 400px;
