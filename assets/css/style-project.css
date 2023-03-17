@@ -267,6 +267,10 @@ body.nav-active {
     transition: 0.75s ease;
 }
 
+[data-reveal="ease"] {
+    transform: scale(1);
+}
+
 [data-reveal="top"] {
     transform: translateY(-30px);
 }
@@ -444,10 +448,13 @@ body.nav-active {
     font-weight: bolder;
 }
 
+.content-wrapper {}
+
 .project .content-wrapper {
     align-items: center;
     padding: 5%;
     border-radius: var(--radius-8);
+    transition: all 0.75s ease-in;
 }
 
 iframe {
