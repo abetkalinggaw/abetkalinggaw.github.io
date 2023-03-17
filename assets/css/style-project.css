@@ -556,7 +556,7 @@ iframe {
     /**
    * PROJECT
    */
-    .project-card {
+    .content-wrapper {
         --padding: 60px;
     }
     iframe {
