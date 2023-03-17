@@ -459,8 +459,8 @@ body.nav-active {
 
 iframe {
     border-radius: var(--radius-8);
-    width: 460px;
-    height: 258.75px;
+    width: 480px;
+    height: 270px;
 }
 
 .project .grid-list {
@@ -504,10 +504,10 @@ iframe {
 
 
 /**
- * responsive for large than 575px screen
+ * responsive for large than 175px screen
  */
 
-@media (min-width: 575px) {
+@media (min-width: 175px) {
     /**
    * REUSED STYLE
    */
@@ -521,6 +521,38 @@ iframe {
    */
     .project-card {
         --padding: 68px;
+    }
+    iframe {
+        width: 340px;
+        height: 191.25px;
+        align-items: center;
+    }
+}
+
+
+/**
+ * responsive for large than 460px screen
+ */
+
+@media (min-width: 460px) {
+    /**
+   * REUSED STYLE
+   */
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+    }
+    /**
+   * PROJECT
+   */
+    .project-card {
+        --padding: 68px;
+    }
+    iframe {
+        width: 400px;
+        height: 225px;
+        align-items: center;
     }
 }
 
