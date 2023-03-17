@@ -448,8 +448,6 @@ body.nav-active {
     font-weight: bolder;
 }
 
-.content-wrapper {}
-
 .project .content-wrapper {
     align-items: center;
     padding: 5%;
@@ -519,6 +517,9 @@ iframe {
     /**
    * PROJECT
    */
+    .title-page .h1 {
+        font-size: 25pt;
+    }
     .project-card {
         --padding: 68px;
     }
@@ -546,6 +547,9 @@ iframe {
     /**
    * PROJECT
    */
+    .title-page .h1 {
+        font-size: 25pt;
+    }
     .project-card {
         --padding: 68px;
     }
