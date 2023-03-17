@@ -517,8 +517,11 @@ iframe {
     /**
    * PROJECT
    */
+    .project .title-page {
+        margin-block: 10px;
+    }
     .title-page .h1 {
-        font-size: 25pt;
+        font-size: 35pt;
     }
     .project-card {
         --padding: 68px;
@@ -547,8 +550,11 @@ iframe {
     /**
    * PROJECT
    */
+    .project .title-page {
+        margin-block: 10px;
+    }
     .title-page .h1 {
-        font-size: 25pt;
+        font-size: 35pt;
     }
     .project-card {
         --padding: 68px;
