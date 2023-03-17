@@ -431,15 +431,19 @@ body.nav-active {
 }
 
 .project .title-page {
-    margin-block: 35px;
+    padding: 5%;
+    margin-block: 30px;
+    text-align: center;
 }
 
 .title-page .h1 {
-    padding: 1%;
     font-size: 40pt;
     font-weight: bolder;
-    text-align: center;
     color: var(--charcoal);
+}
+
+.title-page p {
+    font-size: var(--fs-6);
 }
 
 .project-title h2 {
@@ -518,10 +522,12 @@ iframe {
    * PROJECT
    */
     .project .title-page {
-        margin-block: 15px;
+        padding: 2%;
+        margin-block: 25px;
+        text-align: center;
     }
     .title-page .h1 {
-        font-size: 30pt;
+        font-size: 28pt;
     }
     .project-card {
         --padding: 68px;
