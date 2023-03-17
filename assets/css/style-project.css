@@ -436,12 +436,16 @@ main {
 
 .title-page p {
     font-size: var(--fs-6);
+    font-weight: var(--fw-700);
 }
 
-.project-title h2 {
+.project-title {
+    margin-block-start: 40px;
+}
+
+.project-title h3 {
     padding: 1%;
-    font-size: 30pt;
-    font-weight: bolder;
+    font-weight: var(--fw-900);
 }
 
 .project .content-wrapper {
@@ -488,8 +492,33 @@ iframe {
     transition: var(--transition-1);
 }
 
+.card-banner img {
+    transition: all 2s ease;
+}
+
+.card-banner:hover img {
+    transform: scale(1.1);
+}
+
 .content-wrapper .btn-text:is(:hover, :focus-visible) {
     gap: 10px;
+}
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+    padding-block: 40px;
+}
+
+.copyright {
+    margin-block-end: 12px;
+}
+
+.footer .social-link {
+    color: var(--charcoal);
 }
 
 
