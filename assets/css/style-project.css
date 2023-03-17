@@ -518,10 +518,10 @@ iframe {
    * PROJECT
    */
     .project .title-page {
-        margin-block: 10px;
+        margin-block: 15px;
     }
     .title-page .h1 {
-        font-size: 35pt;
+        font-size: 30pt;
     }
     .project-card {
         --padding: 68px;
@@ -550,12 +550,6 @@ iframe {
     /**
    * PROJECT
    */
-    .project .title-page {
-        margin-block: 10px;
-    }
-    .title-page .h1 {
-        font-size: 35pt;
-    }
     .project-card {
         --padding: 68px;
     }
