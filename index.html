@@ -28,17 +28,16 @@
     <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
-    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner/hero-banner-1.jpg" />
 </head>
 
-<body data-reveal="ease" data-reveal-delay="0.25s">
+<body>
     <!-- 
     - #HEADER
   -->
 
     <header class="header" data-header>
-        <div class="container">
+        <div class="container" data-reveal="top">
             <a href="#" class="logo" id="navbar-logo"> Jaycuzzi. </a>
 
             <nav class="navbar" data-navbar>
@@ -131,8 +130,9 @@
 
                     <div class="hero-content">
                         <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.25s">
-                            Hi, I'm Abet
+                            Hi, I'm Abet.
                         </h1>
+
                         <h4 class="h4 hero-title" data-reveal="top" data-reveal-delay="0.5s">
                             UI Designer, Frontend Developer & Video Editor
                         </h4>
@@ -142,7 +142,7 @@
                             environment. Had interest with UI/UX Design, Web Development and Android Development and also interest with Video Editing.
                         </p>
 
-                        <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                        <div class="btn-wrapper" data-reveal="ease" data-reveal-delay="0.85s">
                             <a href="#about" class="btn btn-primary">See More</a>
 
                             <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -232,11 +232,7 @@
                     <ul class="grid-list" id="skills-detail">
                         <li data-reveal="bottom">
                             <div class="about-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon" />
-                                </div>
-
-                                <h3 class="h4 card-title">Web Design</h3>
+                                <h3 class="h3 card-title">Web Design</h3>
 
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsum doloribus quia quasi ducimus minima laboriosam illo odit iure sequi cupiditate ab voluptas iusto eveniet exercitationem sunt, incidunt maiores corrupti.
@@ -246,11 +242,7 @@
 
                         <li data-reveal="bottom">
                             <div class="about-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon" />
-                                </div>
-
-                                <h3 class="h4 card-title">Mobile Design</h3>
+                                <h3 class="h3 card-title">Mobile Design</h3>
 
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eius reprehenderit repellat doloribus excepturi eaque amet sit et! Iusto exercitationem adipisci voluptatem magni? Nisi laboriosam tenetur modi. Nam, quos corrupti.
@@ -260,11 +252,7 @@
 
                         <li data-reveal="bottom">
                             <div class="about-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="web development icon" />
-                                </div>
-
-                                <h3 class="h4 card-title">Development</h3>
+                                <h3 class="h3 card-title">Development</h3>
 
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores, illo dolore minus culpa consectetur. Quod commodi magnam obcaecati ratione iste dolore. Repellendus natus temporibus quod! Iusto ducimus assumenda distinctio.
@@ -274,11 +262,7 @@
 
                         <li data-reveal="bottom">
                             <div class="about-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon" />
-                                </div>
-
-                                <h3 class="h4 card-title">SQL</h3>
+                                <h3 class="h3 card-title">SQL</h3>
 
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora officiis porro deleniti praesentium dolores suscipit quisquam laboriosam magnam fuga? Perspiciatis vitae, quo temporibus at dolorum labore voluptatem ducimus veniam?
@@ -288,11 +272,7 @@
 
                         <li data-reveal="bottom">
                             <div class="about-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon" />
-                                </div>
-
-                                <h3 class="h4 card-title">Video Editing</h3>
+                                <h3 class="h3 card-title">Video Editing</h3>
 
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora officiis porro deleniti praesentium dolores suscipit quisquam laboriosam magnam fuga? Perspiciatis vitae, quo temporibus at dolorum labore voluptatem ducimus veniam?
@@ -310,7 +290,7 @@
             <section class="section experience" aria-label="experience" id="experience">
                 <div class="container">
                     <div class="wrapper">
-                        <div data-reveal="left">
+                        <div data-reveal="top">
                             <h2 class="h2 section-title">Experiences</h2>
 
                             <p class="section-text">
@@ -405,8 +385,8 @@
 
             <section class="section project" aria-labelledby="project-label" id="project">
                 <div class="container">
-                    <div class="title-wrapper" data-reveal="top">
-                        <div>
+                    <div class="title-wrapper">
+                        <div data-reveal="left">
                             <h2 class="h2 section-title" id="project-label">
                                 Latest Projects
                             </h2>
@@ -416,19 +396,44 @@
                             </p>
                         </div>
 
-                        <a href="./pages/page-projects.html" class="btn btn-secondary">See All Projects</a>
+                        <a href="./pages/page-projects.html" class="btn btn-secondary" data-reveal="right">See All Projects</a>
                     </div>
 
                     <ul class="grid-list">
                         <li>
-                            <div class="project-card project-card-1" style="background-color: #f8f5fb">
+                            <div class="project-card project-card-1" style="background-color:  #f1f5fd">
                                 <div class="card-content" data-reveal="left">
+                                    <p class="card-tag" style="color: #3f78e0">Web Development</p>
+
+                                    <h3 class="h3 card-title">Full Sehat Workout Website</h3>
+
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi exercitationem ea. Odit fuga, magni tenetur nihil iusto aliquam accusamus vitae sequi! Est quam molestias aliquid consectetur modi dignissimos iure.
+                                    </p>
+
+                                    <a href="https://vhost.ti.ukdw.ac.id/~maximiliano/index.php" class="btn-text" target="_blank" rel="noopener noreferrer" style="color: #3f78e0">
+                                        <span class="span">See Project</span>
+
+                                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                    </a>
+                                </div>
+                                <figure class="card-banner" data-reveal="right">
+                                    <img src="./assets/images/portofolio/Website/FSM.png" width="750" height="470" loading="lazy" alt="Web Design" class="w-100" />
+                                </figure>
+
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="project-card project-card-2" style="background-color:#f8f5fb">
+                                <div class="card-content" data-reveal="right">
                                     <p class="card-tag" style="color: #a07cc5">Web Development</p>
 
                                     <h3 class="h3 card-title">Portofolio Website</h3>
 
                                     <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi exercitationem ea. Odit fuga, magni tenetur nihil iusto aliquam accusamus vitae sequi! Est quam molestias aliquid consectetur modi dignissimos iure.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum atque adipisci aliquam hic veniam voluptatem provident? Nam excepturi nostrum magnam cupiditate fugit aperiam! Sit hic eius reiciendis, minima quod quibusdam.
                                     </p>
 
                                     <a href="https://abetkalinggaw.netlify.app/index.html" class="btn-text" target="_blank" rel="noopener noreferrer" style="color: #a07cc5">
@@ -438,32 +443,8 @@
                                     </a>
                                 </div>
 
-                                <figure class="card-banner" data-reveal="right">
-                                    <img src="./assets/images/portofolio/Website/my-porto.png" width="750" height="470" loading="lazy" alt="Web Design" class="w-100" />
-                                </figure>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="project-card project-card-2" style="background-color: #f1f5fd">
-                                <div class="card-content" data-reveal="right">
-                                    <p class="card-tag" style="color: #3f78e0">Web Development</p>
-
-                                    <h3 class="h3 card-title">FSM - Workout Website</h3>
-
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum atque adipisci aliquam hic veniam voluptatem provident? Nam excepturi nostrum magnam cupiditate fugit aperiam! Sit hic eius reiciendis, minima quod quibusdam.
-                                    </p>
-
-                                    <a href="https://vhost.ti.ukdw.ac.id/~maximiliano/index.php" class="btn-text" target="_blank" rel="noopener noreferrer" style="color: #3f78e0">
-                                        <span class="span">See Project</span>
-
-                                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                    </a>
-                                </div>
-
                                 <figure class="card-banner" data-reveal="left">
-                                    <img src="./assets/images/portofolio/Website/FSM.png" width="600" height="367" loading="lazy" alt="Web Design" class="w-100" />
+                                    <img src="./assets/images/portofolio/Website/my-porto.png" width="750" height="470" loading="lazy" alt="Web Design" class="w-100" />
                                 </figure>
                             </div>
                         </li>
@@ -526,9 +507,9 @@
         -->
 
             <section class="section contact" aria-label="contact" id="contact">
-                <div class="container">
+                <div class="container" data-reveal="bottom" data-reveal-delay="0.50s">
                     <div class="contact-card">
-                        <div class="contact-content" data-reveal="left">
+                        <div class="contact-content">
                             <div class="card-icon">
                                 <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon" />
                             </div>
@@ -542,7 +523,7 @@
                             </p>
                         </div>
 
-                        <form action="" class="contact-form" data-reveal="right">
+                        <form action="" class="contact-form">
                             <div class="input-wrapper">
                                 <input type="text" name="name" placeholder="Name *" required class="input-field" />
 
