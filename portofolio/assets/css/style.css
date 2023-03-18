@@ -15,6 +15,7 @@
     --raisin-black_a6: #1f23290f;
     --gunmetal: #2e343e;
     --charcoal: #343e51;
+    --blue: #3f78e0;
     /**
    * typography
    */
@@ -215,7 +216,7 @@ body.nav-active {
 .btn {
     color: #4282f9;
     font-size: var(--fs-6);
-    font-weight: var(--fw-700);
+    font-weight: var(--fw-600);
     border: 2px solid #4282f9;
     max-width: max-content;
     padding: 12px 28px;
@@ -257,6 +258,7 @@ body.nav-active {
 }
 
 .section-title {
+    font-weight: var(--fw-800);
     margin-block-end: 16px;
 }
 
@@ -385,7 +387,7 @@ header .navbar.active {
 }
 
 .navbar-link {
-    font-weight: var(--fw-700);
+    font-weight: var(--fw-600);
     padding-block: 6px;
 }
 
@@ -451,11 +453,16 @@ header .navbar.active {
 }
 
 .hero-content h1 {
-    font-size: 46pt;
-    font-family: monospace;
+    color: #3f78e0;
+    font-size: 50pt;
+}
+
+.hero-content h4 {
+    font-size: 22pt;
 }
 
 .hero .section-text {
+    font-weight: var(--fw-500);
     margin-block: 24px 36px;
 }
 
@@ -574,7 +581,7 @@ header .navbar.active {
 
 .exp-card .card-title {
     font-size: var(--fs-3);
-    font-weight: var(--fw-900);
+    font-weight: var(--fw-700);
     margin-block-end: 5px;
 }
 
@@ -626,7 +633,7 @@ header .navbar.active {
 
 .project-card .card-tag {
     font-size: var(--fs-8);
-    font-weight: var(--fw-700);
+    font-weight: var(--fw-600);
     text-transform: uppercase;
 }
 
@@ -642,7 +649,7 @@ header .navbar.active {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-weight: var(--fw-700);
+    font-weight: var(--fw-600);
     transition: var(--transition-1);
 }
 
@@ -668,6 +675,7 @@ header .navbar.active {
 }
 
 .contact .section-title {
+    font-weight: var(--fw-800);
     margin-block-start: 20px;
 }
 
@@ -733,7 +741,9 @@ textarea.input-field {
    */
     .hero-content h1 {
         font-size: 32pt;
-        font-family: monospace;
+    }
+    .hero-content h4 {
+        font-size: 14pt;
     }
     .hero-content .section-text {
         text-align: center;
@@ -765,7 +775,9 @@ textarea.input-field {
    */
     .hero-content h1 {
         font-size: 38pt;
-        font-family: monospace;
+    }
+    .hero-content h4 {
+        font-size: 18pt;
     }
     /**
    * ABOUT
