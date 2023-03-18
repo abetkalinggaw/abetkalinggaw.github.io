@@ -280,6 +280,7 @@ main {
 }
 
 [data-reveal].revealed {
+    transform: translateX(0);
     opacity: 1;
 }
 
