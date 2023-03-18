@@ -252,7 +252,7 @@ body.nav-active {
 
 [data-reveal] {
     opacity: 0;
-    transition: 0.75s ease;
+    transition: 1s ease;
 }
 
 [data-reveal="top"] {
@@ -272,7 +272,6 @@ body.nav-active {
 }
 
 [data-reveal].revealed {
-    transform: translate(0);
     opacity: 1;
 }
 
@@ -839,7 +838,7 @@ textarea.input-field {
         transition: var(--transition-1);
     }
     .navbar-link:is(:hover, :focus-visible) {
-        color: var(--cinnamon-satin);
+        color: #4282f9;
     }
     .navbar .social-link {
         color: var(--charcoal);
