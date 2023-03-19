@@ -240,15 +240,6 @@ body.nav-active {
     font-size: var(--fs-6);
 }
 
-.about .section-text {
-    font-size: var(--fs-4);
-}
-
-.experience .section-text {
-    text-align: center;
-    font-size: var(--fs-4);
-}
-
 .project .section-text {
     font-size: var(--fs-4);
 }
@@ -452,12 +443,13 @@ header .navbar.active {
     text-align: center;
 }
 
-.hero-content h1 {
+.hero-content .hero-title {
     color: #3f78e0;
-    font-size: 50pt;
+    font-weight: var(--fw-800);
+    font-size: 44pt;
 }
 
-.hero-content h4 {
+.hero-content .card-subtitle {
     font-size: 22pt;
 }
 
@@ -480,32 +472,9 @@ header .navbar.active {
 \*-----------------------------------*/
 
 .about .wrapper {
-    display: grid;
-    gap: 50px;
-    margin-block-end: 70px;
-}
-
-.progress-list .label-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-block-end: 4px;
-}
-
-.progress-item:not(:last-child) {
-    margin-block-end: 16px;
-}
-
-.progress {
-    background-color: var(--raisin-black_a6);
-    height: 6px;
-    width: 100%;
-    border-radius: var(--radius-pill);
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: inherit;
+    text-align: center;
+    gap: 60px;
+    margin-block-end: 40px;
 }
 
 #skills-detail {
@@ -542,20 +511,10 @@ header .navbar.active {
     background-color: #f6f7f9;
 }
 
-.experience .container {
-    width: 100%;
-}
-
 .experience .wrapper {
-    display: grid;
     text-align: center;
-    gap: 50px;
-    margin-block-end: 30px;
-}
-
-.experience .wrapper .section-text {
-    padding-left: 10%;
-    padding-right: 10%;
+    gap: 60px;
+    margin-block-end: 40px;
 }
 
 #exp-detail {
@@ -739,10 +698,10 @@ textarea.input-field {
     /**
    * HERO
    */
-    .hero-content h1 {
+    .hero-content .hero-title {
         font-size: 32pt;
     }
-    .hero-content h4 {
+    .hero-content .hero-subtitle {
         font-size: 14pt;
     }
     .hero-content .section-text {
@@ -773,10 +732,10 @@ textarea.input-field {
     /**
    * HERO
    */
-    .hero-content h1 {
+    .hero-content .hero-title {
         font-size: 38pt;
     }
-    .hero-content h4 {
+    .hero-content .hero-subtitle {
         font-size: 18pt;
     }
     /**
@@ -1047,18 +1006,12 @@ textarea.input-field {
     /**
    * ABOUT
    */
-    .about .wrapper {
-        gap: 100px;
-    }
     .about .grid-list {
         gap: 60px;
     }
     /**
    * EXPERIENCE
    */
-    .experience .wrapper {
-        gap: 100px;
-    }
     .experience .grid-list {
         gap: 60px;
     }

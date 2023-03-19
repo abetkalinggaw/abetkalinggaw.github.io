@@ -434,19 +434,13 @@ main {
     justify-content: center;
 }
 
-.project .title-page {
-    padding: 5%;
-    margin-block: 30px;
+.project .wrapper {
+    padding: 2%;
+    margin-block: 20px;
     text-align: center;
 }
 
-.title-page .h1 {
-    font-size: 40pt;
-    font-weight: bolder;
-    color: var(--charcoal);
-}
-
-.title-page p {
+.wrapper p {
     font-size: var(--fs-6);
     font-weight: var(--fw-600);
 }
@@ -455,15 +449,14 @@ main {
     margin-block-start: 20px;
 }
 
-.project-title h3 {
-    padding: 1%;
+.project-title .section-title {
+    padding: 2%;
     font-weight: var(--fw-700);
     text-decoration: underline 3px;
     text-underline-offset: 10px;
 }
 
 .project .content-wrapper {
-    align-items: center;
     padding: 5%;
     border-radius: var(--radius-8);
     transition: all 0.75s ease-in;
