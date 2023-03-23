@@ -118,7 +118,7 @@ body {
     background-color: var(--white);
     color: var(--black);
     font-size: 1.6rem;
-    line-height: 1.3;
+    line-height: 1.1;
 }
 
 :focus-visible {
@@ -130,7 +130,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: hsl(0, 0%, 98%);
+    background-color: var(--eerie-black);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -254,10 +254,6 @@ body {
 .grid-list {
     display: grid;
     gap: 30px;
-}
-
-.w-100 {
-    width: 100%;
 }
 
 
@@ -490,6 +486,8 @@ PRODUCT
 }
 
 .filter-btn-list {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-6);
     margin-block: 20px 50px;
     display: flex;
     flex-wrap: wrap;
@@ -511,6 +509,7 @@ PRODUCT
 }
 
 .filter-btn.active {
+    text-decoration: 3px underline;
     color: var(--hoockers-green);
 }
 
@@ -629,9 +628,10 @@ PRODUCT
 }
 
 .product-list[data-filter="all"]>*,
-.product-list[data-filter="accessory"]>.accessory,
-.product-list[data-filter="decoration"]>.decoration,
-.product-list[data-filter="furniture"]>.furniture {
+.product-list[data-filter="t-shirt"]>.t-shirt,
+.product-list[data-filter="hoodie"]>.hoodie,
+.product-list[data-filter="sports"]>.sports,
+.product-list[data-filter="sneaker"]>.sneaker {
     display: block;
     animation: fadeUp 1s ease forwards;
 }
@@ -645,6 +645,21 @@ PRODUCT
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.product .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-block-start: 40px;
+}
+
+.product .btn-product {
+    color: var(--white);
+    background-color: var(--hoockers-green);
+}
+
+.product .btn-product:is(:hover, :focus-within) {
+    background-color: var(--eerie-black);
 }
 
 
@@ -762,9 +777,9 @@ essentials
 
 .essentials-card .card-title {
     color: var(--white);
-    padding: 10px;
     font-weight: var(--fw-700);
     transition: var(--transition-1);
+    padding-bottom: 5px;
 }
 
 .essentials-card .card-btn {
@@ -879,6 +894,15 @@ MEDIA QUERIES
 */
 
 @media (min-width: 340px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+     :root {
+        /**
+       * typography
+       */
+        --fs-6: 1.5rem;
+    }
     .container {
         width: 100%;
         margin-inline: auto;
@@ -919,6 +943,7 @@ MEDIA QUERIES
         --fs-1: 7rem;
         --fs-2: 5rem;
         --fs-3: 2.6rem;
+        --fs-6: 1.7rem;
     }
     .container {
         max-width: 575px;
@@ -1024,6 +1049,7 @@ MEDIA QUERIES
         --fs-1: 10rem;
         --fs-2: 5rem;
         --fs-3: 3rem;
+        --fs-6: 1.8rem;
         /**
        * spacing
        */
@@ -1135,6 +1161,7 @@ MEDIA QUERIES
         --fs-1: 10rem;
         --fs-2: 5.5rem;
         --fs-3: 3.2rem;
+        --fs-6: 2rem;
     }
     /**
      * REUSED STYLE
