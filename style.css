@@ -520,7 +520,7 @@ header {
 
 @media (max-width: 900px) {
       .header__menu>.header__menu-item {
-            font-size: 7vh;
+            font-size: 9vh;
       }
 
       .header__menu>.header__menu-item:not(:last-of-type) {
@@ -528,7 +528,7 @@ header {
       }
 
       .header__menu-item a {
-            padding-left: 20px;
+            padding-left: 0;
             position: fixed;
             letter-spacing: -4px;
       }
