@@ -2,174 +2,247 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Portfolio Page | HTML & CSS</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <link rel="stylesheet" href="./assets/styles/style.css">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
 </head>
 
 <body>
+      <div class="container-menu">
+            <button class="header__button nav-btn-js" type="button"></button>
+            <nav class="header__nav nav-js" data-active="false">
+                  <ul class="header__menu">
+                        <li class="header__menu-item"><a href="#">Home</a></li>
+                        <li class="header__menu-item"><a href="#">Projects</a></li>
+                        <li class="header__menu-item"><a href="#">About</a></li>
+                        <li class="header__menu-item"><a href="#">Contact</a></li>
+                  </ul>
+            </nav>
+      </div>
 
 
-    <main>
-        <article>
+      <article class="wrapper">
 
-            <div class="section hero">
-                <div class="container">
-                    <div class="hero-content">
-                        <div class="subtitle-wrapper">
-                            <h2 class="h2 hero-subtitle">ꦱꦸꦒꦼꦁꦫꦮꦸꦃ</h2>
-                            <img class="subtitle-img" src="./assets/images/emoji/namaste.svg" alt="">
-                        </div>
+            <section class="section hero">
+                  <h3 class="anim">Hello World!</h3>
+                  <h1 class="anim">Abet Kalingga Wijaya</h1>
+                  <p class="anim">I'm an UI/UX Designer and Web Developer based in Yogyakarta, Indonesia. I'd love make
+                        beautiful interfaces, web apps and everything in between!</p>
 
-                        <h1 class="h1 hero-title">Hi! I'm <strong>Abet Kalingga Wijaya</strong>, a UI/UX Designer and Web Developer based in Yogyakarta, Indonesia. I'd love make beautiful interfaces, web apps and everything in between!</h1>
-
-                        <div class="git-wrapper">
-                            <p class="hero-text">Get in touch</p>
-                            <img class="subtitle-img" src="./assets/images/emoji/git.svg" alt="">
-                            <a href="mailto:abet.kalingga@gmail.com">abet.kalingga@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="card-image">
-                        <img class="myimage" src="./assets/images/img/hero-img.jpeg" width="500px" height="500px" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <section class="section about">
-                <div class="container">
-                    <div class="sidebar" id="sidebar">
-                        <h3 class="h3 section-title">Background</h3>
-                    </div>
-
-                    <div class="about content" id="content">
-                        <div class="wrapper">
-                            <p class="section-text">I'm currently studying at <strong>Duta Wacana Christian University</strong>. I'm willing to learn new things and have a passion in the field of information and technology as well as its development. <br><br> I'm easy to interact
-                                and adapt to new environment. Had interest with <strong>UI/UX Design, Web Development</strong> and<strong> Android Development</strong> and also interest in <strong>Video Editing.</strong> <br><br> <strong>When I'm not in front of my computer screen.</strong>                                I'm probably sleeping, traveling, or watching movies.</p>
-
-                            <a href="https://bit.ly/cv-abet" class="btn btn-link" target="_blank" rel="noopener noreferrer">
-                                <span class="span">Download CV</span>
-
-                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
+                  <div class="btn-wrapper">
+                        <a class="btn-hero" href="#project">
+                              <span class="span" id="btn-hero">Get In Touch</span>
+                              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                  </div>
             </section>
 
+            <section class="section project" id="project">
+                  <div class="title-wrapper">
+                        <h1 class="anim section-title">Project</h1>
+                        <p class="anim section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                              sit necessitatibus, eos minima odio, ea ipsam, dicta nihil praesentium soluta fugit
+                              aspernatur nisi enim libero quos omnis? Optio suscipit quibusdam incidunt maiores
+                              repudiandae
+                              laudantium eaque, obcaecati totam architecto aut ab?</p>
+                  </div>
+                  <div class="card-container">
+                        <div class="card">
+                              <img src="./assets/images/project4.jpg" alt="" />
+                              <div class="info">
+                                    <h2>FSM | Workout Websites</h2>
+                                    <span class="sub-title">College Project - 2020</span>
 
-            <section class="section experience">
-                <div class="container">
-                    <div class="sidebar" id="sidebar">
-                        <h3 class="h3 section-title">experiences</h3>
-                    </div>
+                                    <div class="hide-info">
+                                          <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                                commodo nulla mauris, eget tincidunt felis bibendum sit amet.
 
-                    <div class="experience content" id="content">
-                        <div class="wrapper">
-                            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptas fugiat vel praesentium explicabo, nostrum doloribus ipsa a quibusdam blanditiis ipsam et doloremque illum nemo maxime perspiciatis alias rerum ut? Lorem
-                                ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti, quas, ipsa adipisci exercitationem dolorem laudantium accusamus magni dicta sint labore assumenda nihil consequatur consequuntur, provident quam optio
-                                veritatis nobis!</p>
 
-                            <br>
+                                                <br>
+                                                <div class="btn-wrapper">
+                                                      <a class="btn-info"
+                                                            href="https://vhost.ti.ukdw.ac.id/~maximiliano/index.php"
+                                                            target="_blank" rel="noopener noreferrer">
+                                                            <span class="span" id="btn-live">Live Site</span>
+                                                            <ion-icon name="arrow-forward"
+                                                                  aria-hidden="true"></ion-icon>
+                                                      </a>
 
-                            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptas fugiat vel praesentium explicabo, nostrum doloribus ipsa a quibusdam blanditiis ipsam et doloremque illum nemo maxime perspiciatis alias rerum ut? Lorem
-                                ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti, quas, ipsa adipisci exercitationem dolorem laudantium accusamus magni dicta sint labore assumenda nihil consequatur consequuntur, provident quam optio
-                                veritatis nobis!</p>
+                                                      <a class="btn-info"
+                                                            href="https://github.com/abetkalinggaw/ProgWeb-FinalProject"
+                                                            target="_blank" rel="noopener noreferrer">
+                                                            <span class="span" id="btn-github">GitHub</span>
+                                                            <ion-icon name="arrow-forward"
+                                                                  aria-hidden="true"></ion-icon>
+                                                      </a>
+                                                </div>
+
+                                          </span>
+                                    </div>
+                              </div>
                         </div>
-                    </div>
-                </div>
+
+                        <div class="card">
+                              <img src="./assets/images/project4.jpg" alt="" />
+                              <div class="info">
+                                    <h2>JShop | Clothing Websites</h2>
+                                    <span class="sub-title">Personal Project - 2023</span>
+
+                                    <div class="hide-info">
+                                          <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                                commodo nulla mauris, eget tincidunt felis bibendum sit amet.
+
+
+                                                <br>
+                                                <div class="btn-wrapper">
+                                                      <a class="btn-info" href="https://abetkalinggaw.github.io/jshop/"
+                                                            target="_blank" rel="noopener noreferrer">
+                                                            <span class="span" id="btn-live">Live Site</span>
+                                                            <ion-icon name="arrow-forward"
+                                                                  aria-hidden="true"></ion-icon>
+                                                      </a>
+
+                                                      <a class="btn-info"
+                                                            href="https://github.com/abetkalinggaw/jshop-ecommerce"
+                                                            target="_blank" rel="noopener noreferrer">
+                                                            <span class="span" id="btn-github">GitHub</span>
+                                                            <ion-icon name="arrow-forward"
+                                                                  aria-hidden="true"></ion-icon>
+                                                      </a>
+                                                </div>
+
+                                          </span>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="card">
+                              <img src="./assets/images/project4.jpg" alt="" />
+                              <div class="info">
+                                    <h2>Jay | Portfolio Websites</h2>
+                                    <span class="sub-title">Personal Project - 2023</span>
+
+                                    <div class="hide-info">
+                                          <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                                commodo nulla mauris, eget tincidunt felis bibendum sit amet.
+
+
+                                                <br>
+                                                <div class="btn-wrapper">
+                                                      <a class="btn-info" href="https://abetkalinggaw.github.io/"
+                                                            target="_blank" rel="noopener noreferrer">
+                                                            <span class="span" id="btn-live">Live Site</span>
+                                                            <ion-icon name="arrow-forward"
+                                                                  aria-hidden="true"></ion-icon>
+                                                      </a>
+
+                                                      <a class="btn-info"
+                                                            href="https://github.com/abetkalinggaw/jay_portfolio">
+                                                            <span class="span" id="btn-github" target="_blank"
+                                                                  rel="noopener noreferrer">GitHub</span>
+                                                            <ion-icon name="arrow-forward"
+                                                                  aria-hidden="true"></ion-icon>
+                                                      </a>
+                                                </div>
+
+                                          </span>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="card">
+                              <img src="./assets/images/project4.jpg" alt="" />
+                              <div class="info">
+                                    <h2>Jay | Protfolio Websites</h2>
+                                    <span class="sub-title">Personal Project - 2023</span>
+
+                                    <div class="hide-info">
+                                          <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                                commodo nulla mauris, eget tincidunt felis bibendum sit amet.
+
+
+                                                <br>
+                                                <div class="btn-wrapper">
+                                                      <a class="btn-info" href="#" target="_blank"
+                                                            rel="noopener noreferrer">
+                                                            <span class="span" id="btn-live">Live Site</span>
+                                                            <ion-icon name="arrow-forward"
+                                                                  aria-hidden="true"></ion-icon>
+                                                      </a>
+
+                                                      <a class="btn-info" href="#">
+                                                            <span class="span" id="btn-github" target="_blank"
+                                                                  rel="noopener noreferrer">GitHub</span>
+                                                            <ion-icon name="arrow-forward"
+                                                                  aria-hidden="true"></ion-icon>
+                                                      </a>
+                                                </div>
+
+                                          </span>
+                                    </div>
+                              </div>
+                        </div>
+
+
+                  </div>
+
+
             </section>
 
+            <section class="section otherproject" id="otherproject">
+                  <div class="title-wrapper">
+                        <h1 class="anim section-title">Other Projects</h1>
+                        <p class="anim section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                              sit necessitatibus, eos minima odio, ea ipsam, dicta nihil praesentium soluta fugit
+                              aspernatur nisi enim libero quos omnis? Optio suscipit quibusdam incidunt maiores
+                              repudiandae
+                              laudantium eaque, obcaecati totam architecto aut ab?</p>
+                  </div>
 
-            <section class="section skill">
-                <div class="container">
-                    <div class="sidebar" id="sidebar">
-                        <h3 class="h3 section-title">Skills</h3>
-                    </div>
+                  <div class="otherproject">
+                        <img class="anim" src="./assets/images/project5.jpg" alt="project img">
+                        <img class="anim" src="./assets/images/project6.jpg" alt="project img">
+                  </div>
 
-                    <div class="skill content" id="content">
-                        <div class="wrapper">
-                            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptas fugiat vel praesentium explicabo, nostrum doloribus ipsa a quibusdam blanditiis ipsam et doloremque illum nemo maxime perspiciatis alias rerum ut? Lorem
-                                ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti, quas, ipsa adipisci exercitationem dolorem laudantium accusamus magni dicta sint labore assumenda nihil consequatur consequuntur, provident quam optio
-                                veritatis nobis!</p>
-                        </div>
-                    </div>
-                </div>
             </section>
 
-            <section class="section projects">
-                <div class="container">
-                    <div class="sidebar" id="sidebar">
-                        <h3 class="h3 section-title">projects</h3>
-                    </div>
+            <footer>
+                  <p>Made With Love | Jaycuzzi 2023</p>
+            </footer>
+      </article>
+      <script type="text/javascript">
+            window.sr = ScrollReveal();
+            sr.reveal('.anim');
 
-                    <div class="projects content" id="content">
-                        <div class="wrapper">
-                            <a href="https://vhost.ti.ukdw.ac.id/~maximiliano/index.php" class="btn btn-link" target="_blank" rel="noopener noreferrer">
-                                <span class="span">FSM - Workout Websites</span>
+            document.addEventListener("DOMContentLoaded", () => {
+                  const revealerNav = window.revealer({
+                        revealElementSelector: ".nav-js",
+                        options: {
+                              anchorSelector: ".nav-btn-js",
+                        },
+                  });
 
-                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                            </a>
-                            <div class="sub-text">
-                                <p>College Project - 2020</p>
-                            </div>
+                  const actionBtn = document.querySelector(".nav-btn-js");
+                  actionBtn.addEventListener("click", () => {
+                        if (!revealerNav.isRevealed()) {
+                              revealerNav.reveal();
+                              actionBtn.setAttribute("data-open", true);
+                        } else {
+                              revealerNav.hide();
+                              actionBtn.setAttribute("data-open", false);
+                        }
+                  });
+            });
+      </script>
 
-                            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, quia! Autem facilis quos magnam eius dignissimos totam est cum iusto, quidem eaque quod tempora, fugiat officiis nulla ad numquam amet?</p>
-                        </div>
-                        <div class="wrapper">
-                            <a href="https://abetkalinggaw.github.io/jshop/" class="btn btn-link" target="_blank" rel="noopener noreferrer">
-                                <span class="span">JShop - Clothing Websites</span>
-
-                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                            </a>
-                            <div class="sub-text">
-                                <p>Personal Project - 2023</p>
-                            </div>
-                            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, quia! Autem facilis quos magnam eius dignissimos totam est cum iusto, quidem eaque quod tempora, fugiat officiis nulla ad numquam amet?</p>
-                        </div>
-                        <div class="wrapper">
-                            <a href="https://abetkalinggaw.github.io/" class="btn btn-link" target="_blank" rel="noopener noreferrer">
-                                <span class="span">Portfolio Websites</span>
-
-                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                            </a>
-                            <div class="sub-text">
-                                <p>Personal Project - 2023</p>
-                            </div>
-                            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, quia! Autem facilis quos magnam eius dignissimos totam est cum iusto, quidem eaque quod tempora, fugiat officiis nulla ad numquam amet?</p>
-                        </div>
-                        <div class="wrapper">
-                            <a href="#" class="btn btn-link">
-                                <span class="span">Responsive Login Page</span>
-
-                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                            </a>
-                            <div class="sub-text">
-                                <p>Personal Project - 2023</p>
-                            </div>
-                            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, quia! Autem facilis quos magnam eius dignissimos totam est cum iusto, quidem eaque quod tempora, fugiat officiis nulla ad numquam amet?</p>
-                        </div>
-
-
-
-                        <a href="#" class="btn btn-github">See More</a>
-                    </div>
-                </div>
-            </section>
-        </article>
-    </main>
-
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
