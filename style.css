@@ -94,11 +94,10 @@ ion-icon {
 #menu-overlay ul li a {
       position: relative;
       text-decoration: none;
-      font-size: 3.5em;
+      font-size: 10vh;
       padding: 0 10px;
       color: #0E0E0E;
-      font-weight: 700;
-      text-transform: uppercase;
+      font-weight: 500 !important;
       display: inline-block;
 }
 
@@ -474,6 +473,7 @@ ion-icon {
       cursor: pointer;
       width: fit-content;
       margin-top: 10px;
+      padding-block-end: 30px;
 }
 
 .footer .row .socialButton i {
@@ -505,18 +505,8 @@ ion-icon {
 /* Responsive */
 
 @media (max-width: 900px) {
-      .header__menu>.header__menu-item {
-            font-size: 9vh;
-      }
-
-      .header__menu>.header__menu-item:not(:last-of-type) {
-            margin-bottom: 0em;
-      }
-
-      .header__menu-item a {
-            padding-left: 0;
-            position: fixed;
-            letter-spacing: -4px;
+      #menu-overlay ul li a {
+            font-size: 6vh;
       }
 
       .hero {
