@@ -124,16 +124,20 @@ ion-icon {
       position: fixed;
       top: 20px;
       right: 20px;
-      width: 50px;
-      height: 50px;
-      border-radius: 5px;
-      background: #766df4 url(assets/images/open.png);
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      background: #766df4;
+      object-fit: cover;
       z-index: 101;
       cursor: pointer;
+      transition: all .5s ease-in-out;
 }
 
 #toggleIcon.active {
-      background: #0E0E0E url(assets/images/close.png);
+      background: #0E0E0E;
+      object-fit: cover;
+      transition: all .5s ease-in-out;
 }
 
 
