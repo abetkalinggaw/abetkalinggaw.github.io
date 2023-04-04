@@ -261,14 +261,14 @@ ion-icon {
       background-color: #1e1e1e;
       z-index: 2;
       width: 100%;
-      height: 70%;
+      height: 80%;
       display: flex;
       padding: 20px 30px;
       flex-direction: column;
       text-decoration: none;
       color: white;
       border-radius: 8px;
-      transform: translateY(60%);
+      transform: translateY(65%);
       /* Change this property */
       transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
@@ -284,7 +284,7 @@ ion-icon {
       opacity: 0.7;
       margin-top: 5px;
       font-weight: 500;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
 }
 
 .card-container .card .hide-info {
@@ -296,25 +296,20 @@ ion-icon {
       line-height: 1.4rem;
 }
 
-.card-container .card .hide-info .btn-wrapper {
-      padding-block-start: 5px;
-}
-
-.card-container .card .hide-info .btn-info {
-      width: fit-content;
-      padding: 2px 0;
-      align-items: center;
-      display: flex;
-      cursor: pointer;
+.card-container .card .hide-info .tags {
       font-size: 0.9rem;
       color: #766df4;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
+      font-weight: 700;
+      margin-block-start: 10px;
+      margin-block-end: 5px;
 }
 
-.hide-info .btn-info .span {
-      padding-right: 5px;
+.card-container .card .hide-info .tags span {
+      padding: 0 5px;
+      color: white;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
 }
 
 .card-container .card .hide-info .span {
@@ -353,6 +348,27 @@ ion-icon {
 .card-container .card:hover .hide-info {
       opacity: 1;
       transform: translateY(0);
+}
+
+.card-container .card .hide-info .btn-wrapper {
+      padding-block-start: 5px;
+}
+
+.card-container .card .hide-info .btn-info {
+      width: fit-content;
+      padding: 2px 0;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: #766df4;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+}
+
+.hide-info .btn-info .span {
+      padding-right: 5px;
 }
 
 
@@ -557,8 +573,14 @@ ion-icon {
       }
 
       .card-container .card .info .sub-title {
-            padding-bottom: 10px;
+            padding-bottom: 2px;
             font-size: 0.6rem;
+      }
+
+      .card-container .card .hide-info .tags {
+            margin-block-start: 2px;
+            margin-block-end: 2px;
+            font-size: 0.7rem;
       }
 
       .card-container .card .hide-info {
@@ -566,7 +588,7 @@ ion-icon {
       }
 
       .card-container .card .hide-info .btn-wrapper {
-            padding-block-start: 10px;
+            padding-block-start: 2px;
       }
 
       .card-container .card .hide-info .btn-info {
